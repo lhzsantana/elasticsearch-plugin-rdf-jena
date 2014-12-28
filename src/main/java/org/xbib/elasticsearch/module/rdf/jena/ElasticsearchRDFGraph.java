@@ -214,6 +214,11 @@ public class ElasticsearchRDFGraph extends GraphBase implements Datatypes {
         public Triple next() {
             return iterator.next();
         }
+
+        @Override
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
     }
 
 }

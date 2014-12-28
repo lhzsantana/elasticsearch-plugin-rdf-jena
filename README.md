@@ -43,7 +43,7 @@ Loading N-Triples
 
     curl '0:9200/_jena/jena/bsbm' -H 'Content-Type: application/n-triples' --data-binary @/Users/joerg/Projects/github/jprante/elasticsearch-plugin-rdf-jena/src/test/resources/bsbm-generated-dataset.nt
     
-    or
+or
     
     curl -XPOST 'http://localhost:9200/_jena/jena/bsbm' -H 'Content-Type: application/n-triples' --data-binary @'src/test/resources/bsbm-generated-dataset.nt'
 
@@ -52,7 +52,7 @@ SPARQL Select
 
     curl '0:9200/_jena/jena/bsbm' --data-urlencode "query=SELECT * WHERE { ?s ?p ?o } LIMIT 10" -H "Accept: application/sparql-results+xml"
     
-    or
+or
     
     curl -XPOST 'http://localhost:9200/_jena/jena/bsbm' --data-urlencode "query=SELECT * WHERE { ?s ?p ?o } LIMIT 10" -H "Accept: application/sparql-results+xml"
     

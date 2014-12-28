@@ -22,7 +22,7 @@ Due to the restrictions of such an architecture, do not expect good performance.
 
 ## Installation
 
-    ./bin/plugin --install rdf-jena --url http://xbib.org/repository/org/xbib/elasticsearch/plugin/elasticsearch-plugin-rdf-jena/1.4.0.0/elasticsearch-plugin-rdf-jena-1.4.0.0-plugin.zip
+    ./bin/plugin --install rdf-jena --url http://xbib.org/repository/org/xbib/elasticsearch/plugin/elasticsearch-plugin-rdf-jena/1.4.0.0/elasticsearch-plugin-rdf-jena-1.4.0.0.zip
 
 Do not forget to restart the node after installing.
 

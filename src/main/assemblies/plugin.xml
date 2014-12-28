@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<assembly>
+    <id>plugin</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>/</outputDirectory>
+            <useProjectArtifact>true</useProjectArtifact>
+            <unpack>false</unpack>
+            <scope>compile</scope>
+            <includes>
+                <include>org.xbib.elasticsearch.plugin</include>
+                <include>org.apache.jena:jena-arq</include>
+                <include>org.apache.jena:jena-core</include>
+                <include>org.apache.jena:jena-iri</include>
+                <include>com.github.jsonld-java:jsonld-java</include>
+                <include>com.fasterxml.jackson.core:jackson-core</include>
+                <include>com.fasterxml.jackson.core:jackson-databind</include>
+                <include>com.fasterxml.jackson.core:jackson-annotations</include>
+                <include>org.apache.httpcomponents:httpcore</include>
+                <include>org.apache.httpcomponents:httpclient</include>
+                <include>xerces:xercesImpl</include>
+                <include>xml-apis:xml-apis</include>
+                <include>commons-codec:commons-codec</include>
+                <include>org.slf4j:slf4j-api</include>
+                <include>org.slf4j:slf4j-log4j12</include>
+            </includes>
+        </dependencySet>
+    </dependencySets>  
+</assembly>

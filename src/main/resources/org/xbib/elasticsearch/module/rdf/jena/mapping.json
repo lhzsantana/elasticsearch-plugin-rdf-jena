@@ -1,0 +1,60 @@
+{
+  "date_detection": false,
+  "_timestamp": {
+    "enabled": true,
+    "store": true
+  },
+  "_source" : {
+     "enabled": false
+  },
+  "_all" : {
+     "enabled": false
+  },
+  "properties" : {
+    "s" : {
+      "type" : "string",
+      "analyzer" : "keyword",
+      "store" : true
+    },
+    "p" : {
+      "type" : "string",
+      "analyzer" : "keyword",
+      "store" : true
+    },
+    "o" : {
+      "type" : "string",
+      "analyzer" : "keyword",
+      "store" : true
+    },
+    "c" : {
+      "type" : "string",
+      "analyzer" : "keyword",
+      "store" : true
+    },
+    "o_lang" : {
+      "type" : "string",
+      "analyzer" : "keyword",
+      "store" : true
+    },
+    "o_b" : {
+      "type" : "boolean",
+      "store" : true
+    },
+    "o_d" : {
+      "type" : "date",
+      "store" : true
+    },
+    "o_f" : {
+      "type" : "double",
+      "store" : true
+    },
+    "o_l" : {
+      "type" : "long",
+      "store" : true
+    },
+    "o_s" : {
+      "type" : "string",
+      "store" : true
+    }
+  }
+}

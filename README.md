@@ -4,8 +4,7 @@ Image by [Apache Jena](http://jena.apache.org)
 
 # Elasticsearch RDF Jena Plugin
 
-This plugin uses the Elasticsearch RESTful API to store and retrieve RDF triples in
-Elasticsearch JSON documents by using the Apache Jena API.
+This Elasticsearch plugin stores and retrieves RDF triples by using the Apache Jena API.
 
 [Apache Jena](http://jena.apache.org) is a free and open source Java framework for building semantic web
 and Linked Data applications. The framework is composed of different APIs interacting together
@@ -16,9 +15,9 @@ Due to the restrictions of such an architecture, do not expect good performance.
 
 ## Versions
 
-| Plugin  | Elasticsearch   | Jena | Release date |
-|---------|-----------------|------|--------------|
-| 1.4.0.0 | 1.4.0           |      | Dec 28, 2014 |
+| Plugin  | Elasticsearch   | Jena    | Release date |
+|---------|-----------------|---------|--------------|
+| 1.4.0.0 | 1.4.0           | 2.12.1  | Dec 28, 2014 |
 
 ## Installation
 

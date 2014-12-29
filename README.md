@@ -42,10 +42,22 @@ The implementation of this plugin has just begun. Currently, only a subset of th
 Loading N-Triples
 
     curl '0:9200/_jena/jena/bsbm' -H 'Content-Type: application/n-triples' --data-binary @/Users/joerg/Projects/github/jprante/elasticsearch-plugin-rdf-jena/src/test/resources/bsbm-generated-dataset.nt
+    
+or
+    
+    curl -XPOST 'http://localhost:9200/_jena/jena/bsbm' -H 'Content-Type: application/n-triples' --data-binary @'src/test/resources/bsbm-generated-dataset.nt'
+
 
 SPARQL Select
 
     curl '0:9200/_jena/jena/bsbm' --data-urlencode "query=SELECT * WHERE { ?s ?p ?o } LIMIT 10" -H "Accept: application/sparql-results+xml"
+    
+or
+    
+    curl -XPOST 'http://localhost:9200/_jena/jena/bsbm' --data-urlencode "query=SELECT * WHERE { ?s ?p ?o } LIMIT 10" -H "Accept: application/sparql-results+xml"
+    
+returns
+    
     <?xml version="1.0"?>
     <sparql xmlns="http://www.w3.org/2005/sparql-results#">
       <head>
